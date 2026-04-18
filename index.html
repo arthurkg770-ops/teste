@@ -2,81 +2,50 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Café Aurora</title>
+  <title>Central de E-books</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #0f0f0f;
+      background: #0b0b0b;
       color: white;
       text-align: center;
     }
 
-    /* CABEÇALHO */
     header {
-      padding: 90px 20px;
-      background: linear-gradient(135deg, #000, #3b2f2f);
+      padding: 70px 20px;
+      background: linear-gradient(135deg, #000, #2b2b2b);
     }
 
     header h1 {
-      font-size: 50px;
+      font-size: 42px;
       margin: 0;
     }
 
     header p {
-      font-size: 18px;
-      margin-top: 10px;
       opacity: 0.8;
+      margin-top: 10px;
     }
 
-    .btn {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 12px 22px;
-      background: gold;
-      color: black;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
+    .container {
+      padding: 40px 20px;
     }
 
-    .btn:hover {
-      background: #ffd700;
-      transform: scale(1.05);
-    }
-
-    /* SOBRE */
-    .sobre {
-      padding: 60px 20px;
-      background: #1a1a1a;
-    }
-
-    .sobre h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    /* MENU */
-    .menu {
-      padding: 60px 20px;
-    }
-
-    .menu h2 {
-      font-size: 28px;
-      margin-bottom: 30px;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
     .card {
-      display: inline-block;
-      background: #222;
-      margin: 10px;
-      padding: 25px;
-      width: 200px;
+      background: #1c1c1c;
+      width: 220px;
+      padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
       transition: 0.3s;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
     }
 
     .card:hover {
@@ -88,55 +57,70 @@
       margin-bottom: 10px;
     }
 
-    /* RODAPÉ */
-    footer {
-      padding: 20px;
-      background: #000;
-      font-size: 14px;
-      opacity: 0.7;
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
     }
 
+    .btn:hover {
+      background: #ffd700;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background: #000;
+      font-size: 13px;
+      opacity: 0.7;
+    }
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>☕ Café Aurora</h1>
-    <p>O melhor café artesanal da sua cidade</p>
-    <a href="#menu" class="btn">Ver Menu</a>
+    <h1>📚 Central de E-books</h1>
+    <p>Todos os melhores e-books em um só lugar</p>
   </header>
 
-  <section class="sobre">
-    <h2>Sobre nós</h2>
-    <p>
-      O Café Aurora oferece cafés especiais feitos com grãos selecionados,
-      ambiente aconchegante e experiência premium para todos os clientes.
-    </p>
-  </section>
+  <div class="container">
+    <div class="grid">
 
-  <section id="menu" class="menu">
-    <h2>Nosso Menu</h2>
+      <div class="card">
+        <h3>📘 Instagram do Zero</h3>
+        <p>Aprenda a crescer rápido</p>
+        <a class="btn" href="https://SEU-LINK-AQUI.com" target="_blank">Acessar</a>
+      </div>
 
-    <div class="card">
-      <h3>☕ Espresso</h3>
-      <p>Café forte e tradicional</p>
+      <div class="card">
+        <h3>🤖 IA para Ganhar Dinheiro</h3>
+        <p>Use ChatGPT e ferramentas</p>
+        <a class="btn" href="https://SEU-LINK-AQUI.com" target="_blank">Acessar</a>
+      </div>
+
+      <div class="card">
+        <h3>💰 Vendas Online</h3>
+        <p>Estratégias simples</p>
+        <a class="btn" href="https://SEU-LINK-AQUI.com" target="_blank">Acessar</a>
+      </div>
+
+      <div class="card">
+        <h3>🚀 Marketing Digital</h3>
+        <p>Como vender todos os dias</p>
+        <a class="btn" href="https://SEU-LINK-AQUI.com" target="_blank">Acessar</a>
+      </div>
+
     </div>
-
-    <div class="card">
-      <h3>🥛 Cappuccino</h3>
-      <p>Cremoso e equilibrado</p>
-    </div>
-
-    <div class="card">
-      <h3>🧊 Iced Coffee</h3>
-      <p>Refrescante e moderno</p>
-    </div>
-
-  </section>
+  </div>
 
   <footer>
-    <p>© 2026 Café Aurora — Todos os direitos reservados</p>
+    © 2026 Central de E-books - Todos os direitos reservados
   </footer>
 
 </body>
